@@ -1,0 +1,133 @@
+{
+  "actions": [
+    {
+      "action": "create_task",
+      "description": "Create a new task",
+      "required_params": [
+        "title"
+      ],
+      "optional_params": [
+        "description",
+        "priority",
+        "due_date",
+        "assignee"
+      ]
+    },
+    {
+      "action": "send_message",
+      "description": "Send a message to a user",
+      "required_params": [
+        "recipient",
+        "message"
+      ],
+      "optional_params": [
+        "channel"
+      ]
+    },
+    {
+      "action": "schedule_meeting",
+      "description": "Schedule a meeting with one or more people",
+      "required_params": [
+        "title",
+        "participants",
+        "date",
+        "start_time",
+        "duration"
+      ],
+      "optional_params": [
+        "description",
+        "location",
+        "meeting_link"
+      ]
+    },
+    {
+      "action": "create_calendar_event",
+      "description": "Create an event in the calendar",
+      "required_params": [
+        "title",
+        "date",
+        "start_time",
+        "end_time"
+      ],
+      "optional_params": [
+        "location",
+        "description",
+        "reminder"
+      ]
+    },
+    {
+      "action": "search_documents",
+      "description": "Search documents for information",
+      "required_params": [
+        "query"
+      ],
+      "optional_params": [
+        "folder",
+        "file_type",
+        "date_range"
+      ]
+    },
+    {
+      "action": "send_email",
+      "description": "Send an email",
+      "required_params": [
+        "recipient",
+        "subject",
+        "body"
+      ],
+      "optional_params": [
+        "cc",
+        "bcc",
+        "attachments"
+      ]
+    },
+    {
+      "action": "update_task",
+      "description": "Update an existing task",
+      "required_params": [
+        "task_id"
+      ],
+      "optional_params": [
+        "title",
+        "description",
+        "priority",
+        "due_date",
+        "assignee",
+        "status"
+      ]
+    },
+    {
+      "action": "delete_task",
+      "description": "Delete an existing task",
+      "required_params": [
+        "task_id"
+      ],
+      "optional_params": []
+    },
+    {
+      "action": "get_calendar_events",
+      "description": "Retrieve calendar events",
+      "required_params": [
+        "date"
+      ],
+      "optional_params": [
+        "start_time",
+        "end_time",
+        "calendar"
+      ]
+    },
+    {
+      "action": "create_support_ticket",
+      "description": "Create a support ticket for an issue",
+      "required_params": [
+        "title",
+        "description"
+      ],
+      "optional_params": [
+        "priority",
+        "category",
+        "attachments"
+      ]
+    }
+  ]
+}

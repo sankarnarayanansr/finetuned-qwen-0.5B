@@ -1,0 +1,4769 @@
+[
+  {
+    "id": "sample_0001",
+    "utterance": "Get calendar events for next Monday between 14:30 and 17:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "next Monday",
+      "start_time": "14:30",
+      "end_time": "17:00"
+    }
+  },
+  {
+    "id": "sample_0002",
+    "utterance": "Book a 30 minutes meeting with Alex called 'Prepare Q4 report' for 2026-09-22 at 13:00.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "participants": "Alex",
+      "date": "2026-09-22",
+      "start_time": "13:00",
+      "duration": "30 minutes"
+    }
+  },
+  {
+    "id": "sample_0003",
+    "utterance": "Set up 'Fix dashboard metrics' with the project team on next Monday at 11:00, lasting 90 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "participants": "the project team",
+      "date": "next Monday",
+      "start_time": "11:00",
+      "duration": "90 minutes"
+    }
+  },
+  {
+    "id": "sample_0004",
+    "utterance": "Email HR team with subject 'Budget approval' and body: Please share your feedback by Friday.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "HR team",
+      "subject": "Budget approval",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0005",
+    "utterance": "DM finance team: I finished the analysis",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "finance team",
+      "message": "I finished the analysis"
+    }
+  },
+  {
+    "id": "sample_0006",
+    "utterance": "Set up a task for 'Prepare Q4 report' due on 2026-09-20.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "due_date": "2026-09-20"
+    }
+  },
+  {
+    "id": "sample_0007",
+    "utterance": "Create 'Fix dashboard metrics' and assign it to Taylor.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "assignee": "Taylor"
+    }
+  },
+  {
+    "id": "sample_0008",
+    "utterance": "Add 'Submit expense report' to my task list.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Submit expense report"
+    }
+  },
+  {
+    "id": "sample_0009",
+    "utterance": "Send Contract review to Rahul saying Can you confirm the latest figures?.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Rahul",
+      "subject": "Contract review",
+      "body": "Can you confirm the latest figures?"
+    }
+  },
+  {
+    "id": "sample_0010",
+    "utterance": "Send The client moved the meeting to 3 PM to HR team on Slack.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "HR team",
+      "message": "The client moved the meeting to 3 PM",
+      "channel": "Slack"
+    }
+  },
+  {
+    "id": "sample_0011",
+    "utterance": "I need a task for Update onboarding checklist.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Update onboarding checklist"
+    }
+  },
+  {
+    "id": "sample_0012",
+    "utterance": "Create a calendar event 'Update onboarding checklist' on 2026-09-22 from 14:30 to 12:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "date": "2026-09-22",
+      "start_time": "14:30",
+      "end_time": "12:00"
+    }
+  },
+  {
+    "id": "sample_0013",
+    "utterance": "Rename task T-1001 to 'Update pricing sheet'.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1001",
+      "title": "Update pricing sheet"
+    }
+  },
+  {
+    "id": "sample_0014",
+    "utterance": "Assign task T-1042 to Sam.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1042",
+      "assignee": "Sam"
+    }
+  },
+  {
+    "id": "sample_0015",
+    "utterance": "What meetings do I have on 2026-09-22?",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-22"
+    }
+  },
+  {
+    "id": "sample_0016",
+    "utterance": "Show my calendar events for tomorrow.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "tomorrow"
+    }
+  },
+  {
+    "id": "sample_0017",
+    "utterance": "Set up 'Review vendor contract' with Priya on 2026-09-24 at 11:00, lasting 45 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review vendor contract",
+      "participants": "Priya",
+      "date": "2026-09-24",
+      "start_time": "11:00",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0018",
+    "utterance": "Create a calendar event 'Update pricing sheet' on next Monday from 10:30 to 11:30.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "date": "next Monday",
+      "start_time": "10:30",
+      "end_time": "11:30"
+    }
+  },
+  {
+    "id": "sample_0019",
+    "utterance": "Raise a ticket called 'Update pricing sheet' with this issue: review the latest draft",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "description": "review the latest draft"
+    }
+  },
+  {
+    "id": "sample_0020",
+    "utterance": "Send a message to engineering team: 'Let's sync tomorrow'.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "engineering team",
+      "message": "Let's sync tomorrow"
+    }
+  },
+  {
+    "id": "sample_0021",
+    "utterance": "Cancel and delete task T-1001.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1001"
+    }
+  },
+  {
+    "id": "sample_0022",
+    "utterance": "Put Prepare client presentation on my calendar on 2026-09-22 at 13:00 until 15:30.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "date": "2026-09-22",
+      "start_time": "13:00",
+      "end_time": "15:30"
+    }
+  },
+  {
+    "id": "sample_0023",
+    "utterance": "Write to Alex about 'Meeting follow-up': Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Alex",
+      "subject": "Meeting follow-up",
+      "body": "Thanks for your help on this."
+    }
+  },
+  {
+    "id": "sample_0024",
+    "utterance": "Open a support ticket for Submit expense report. Details: update the acceptance criteria",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Submit expense report",
+      "description": "update the acceptance criteria"
+    }
+  },
+  {
+    "id": "sample_0025",
+    "utterance": "Remove task T-3107 from my task list.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-3107"
+    }
+  },
+  {
+    "id": "sample_0026",
+    "utterance": "Raise a ticket called 'Update onboarding checklist' with this issue: update the acceptance criteria",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "description": "update the acceptance criteria"
+    }
+  },
+  {
+    "id": "sample_0027",
+    "utterance": "Create a support ticket titled 'Review security findings': review the latest draft",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Review security findings",
+      "description": "review the latest draft"
+    }
+  },
+  {
+    "id": "sample_0028",
+    "utterance": "Message Sam saying: The client moved the meeting to 3 PM",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Sam",
+      "message": "The client moved the meeting to 3 PM"
+    }
+  },
+  {
+    "id": "sample_0029",
+    "utterance": "DM Alex: Please review the draft",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Alex",
+      "message": "Please review the draft"
+    }
+  },
+  {
+    "id": "sample_0030",
+    "utterance": "Send an email to Jordan. Subject: Meeting follow-up. Message: Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Jordan",
+      "subject": "Meeting follow-up",
+      "body": "Thanks for your help on this."
+    }
+  },
+  {
+    "id": "sample_0031",
+    "utterance": "Schedule 'Submit expense report' with Rahul and Sam at 11:00 on 2026-09-24 for 45 minutes in Bengaluru office.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Submit expense report",
+      "participants": "Rahul and Sam",
+      "date": "2026-09-24",
+      "start_time": "11:00",
+      "duration": "45 minutes",
+      "location": "Bengaluru office"
+    }
+  },
+  {
+    "id": "sample_0032",
+    "utterance": "Create an event called 'Prepare client presentation' for 2026-09-21 from 09:00 to 12:00 at Zoom.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "date": "2026-09-21",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "location": "Zoom"
+    }
+  },
+  {
+    "id": "sample_0033",
+    "utterance": "Please delete the task with ID T-1178.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1178"
+    }
+  },
+  {
+    "id": "sample_0034",
+    "utterance": "Search documents from January 2026 for security audit.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "security audit",
+      "date_range": "January 2026"
+    }
+  },
+  {
+    "id": "sample_0035",
+    "utterance": "Book a 1 hour meeting with the finance team called 'Plan team offsite' for 2026-09-22 at 16:00.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Plan team offsite",
+      "participants": "the finance team",
+      "date": "2026-09-22",
+      "start_time": "16:00",
+      "duration": "1 hour"
+    }
+  },
+  {
+    "id": "sample_0036",
+    "utterance": "Schedule 'Submit expense report' with Alex and Priya at 14:30 on 2026-10-02 for 30 minutes in Bengaluru office.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Submit expense report",
+      "participants": "Alex and Priya",
+      "date": "2026-10-02",
+      "start_time": "14:30",
+      "duration": "30 minutes",
+      "location": "Bengaluru office"
+    }
+  },
+  {
+    "id": "sample_0037",
+    "utterance": "Get calendar events for 2026-10-02 between 14:30 and 14:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-10-02",
+      "start_time": "14:30",
+      "end_time": "14:00"
+    }
+  },
+  {
+    "id": "sample_0038",
+    "utterance": "Send Please review the draft to Alex on Slack.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Alex",
+      "message": "Please review the draft",
+      "channel": "Slack"
+    }
+  },
+  {
+    "id": "sample_0039",
+    "utterance": "Find XLSX documents about expense policy.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "expense policy",
+      "file_type": "XLSX"
+    }
+  },
+  {
+    "id": "sample_0040",
+    "utterance": "Show my work calendar on 2026-10-02.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-10-02",
+      "calendar": "work"
+    }
+  },
+  {
+    "id": "sample_0041",
+    "utterance": "Search documents from the past 30 days for onboarding process.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "onboarding process",
+      "date_range": "the past 30 days"
+    }
+  },
+  {
+    "id": "sample_0042",
+    "utterance": "Show my calendar events for 2026-09-24.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-24"
+    }
+  },
+  {
+    "id": "sample_0043",
+    "utterance": "Set up 'Prepare Q4 report' with the project team on 2026-10-02 at 09:00, lasting 45 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "participants": "the project team",
+      "date": "2026-10-02",
+      "start_time": "09:00",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0044",
+    "utterance": "Email HR team about 'Budget approval', cc team@example.com. Body: Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "HR team",
+      "subject": "Budget approval",
+      "body": "Thanks for your help on this.",
+      "cc": "team@example.com"
+    }
+  },
+  {
+    "id": "sample_0045",
+    "utterance": "Please add a task called 'Submit expense report' with high priority.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Submit expense report",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "sample_0046",
+    "utterance": "Remove task T-1042 from my task list.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1042"
+    }
+  },
+  {
+    "id": "sample_0047",
+    "utterance": "Create an event called 'Update onboarding checklist' for tomorrow from 14:30 to 10:00 at Google Meet.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "date": "tomorrow",
+      "start_time": "14:30",
+      "end_time": "10:00",
+      "location": "Google Meet"
+    }
+  },
+  {
+    "id": "sample_0048",
+    "utterance": "Get calendar events for tomorrow between 14:30 and 17:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "tomorrow",
+      "start_time": "14:30",
+      "end_time": "17:00"
+    }
+  },
+  {
+    "id": "sample_0049",
+    "utterance": "Set up 'Submit expense report' with Rahul and Sam on 2026-09-22 at 13:00, lasting 45 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Submit expense report",
+      "participants": "Rahul and Sam",
+      "date": "2026-09-22",
+      "start_time": "13:00",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0050",
+    "utterance": "File a support ticket under billing: 'Prepare Q4 report'. review the latest draft",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "description": "review the latest draft",
+      "category": "billing"
+    }
+  },
+  {
+    "id": "sample_0051",
+    "utterance": "Change task T-1042's priority to medium.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1042",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "sample_0052",
+    "utterance": "Book a 45 minutes meeting with Priya called 'Update onboarding checklist' for 2026-10-02 at 16:00.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "participants": "Priya",
+      "date": "2026-10-02",
+      "start_time": "16:00",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0053",
+    "utterance": "Send an email to engineering team. Subject: Contract review. Message: Please share your feedback by Friday.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "engineering team",
+      "subject": "Contract review",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0054",
+    "utterance": "Change task T-1178's priority to high.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1178",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "sample_0055",
+    "utterance": "Open a support ticket for Update onboarding checklist. Details: update the acceptance criteria",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "description": "update the acceptance criteria"
+    }
+  },
+  {
+    "id": "sample_0056",
+    "utterance": "Raise a ticket called 'Prepare Q4 report' with this issue: follow up with the vendor",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "description": "follow up with the vendor"
+    }
+  },
+  {
+    "id": "sample_0057",
+    "utterance": "Please delete the task with ID TASK-42.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "TASK-42"
+    }
+  },
+  {
+    "id": "sample_0058",
+    "utterance": "Update task T-3107 to status in progress.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-3107",
+      "status": "in progress"
+    }
+  },
+  {
+    "id": "sample_0059",
+    "utterance": "Write to finance team about 'Q4 planning': Please share your feedback by Friday.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "finance team",
+      "subject": "Q4 planning",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0060",
+    "utterance": "Set task T-2034 due date to next Friday.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-2034",
+      "due_date": "next Friday"
+    }
+  },
+  {
+    "id": "sample_0061",
+    "utterance": "Create a support ticket titled 'Update pricing sheet': document the decision",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "description": "document the decision"
+    }
+  },
+  {
+    "id": "sample_0062",
+    "utterance": "List my events on 2026-09-24 from 09:00 to 17:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-24",
+      "start_time": "09:00",
+      "end_time": "17:00"
+    }
+  },
+  {
+    "id": "sample_0063",
+    "utterance": "Update task T-1042 to status blocked.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1042",
+      "status": "blocked"
+    }
+  },
+  {
+    "id": "sample_0064",
+    "utterance": "Send Project update to Jordan saying Please share your feedback by Friday..",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Jordan",
+      "subject": "Project update",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0065",
+    "utterance": "Delete task T-1178.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1178"
+    }
+  },
+  {
+    "id": "sample_0066",
+    "utterance": "Get rid of task T-1178.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1178"
+    }
+  },
+  {
+    "id": "sample_0067",
+    "utterance": "Send Please review the draft to Sam.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Sam",
+      "message": "Please review the draft"
+    }
+  },
+  {
+    "id": "sample_0068",
+    "utterance": "Set up 'Review security findings' with Alex on next Monday at 11:00, lasting 1 hour.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review security findings",
+      "participants": "Alex",
+      "date": "next Monday",
+      "start_time": "11:00",
+      "duration": "1 hour"
+    }
+  },
+  {
+    "id": "sample_0069",
+    "utterance": "Create a new task: Finalize project brief.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Finalize project brief"
+    }
+  },
+  {
+    "id": "sample_0070",
+    "utterance": "Create an event called 'Prepare client presentation' for 2026-09-24 from 14:30 to 14:00 at Bengaluru office.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "date": "2026-09-24",
+      "start_time": "14:30",
+      "end_time": "14:00",
+      "location": "Bengaluru office"
+    }
+  },
+  {
+    "id": "sample_0071",
+    "utterance": "Arrange a meeting titled 'Update pricing sheet' with the project team for 2026-09-24, starting 14:30, duration 30 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "participants": "the project team",
+      "date": "2026-09-24",
+      "start_time": "14:30",
+      "duration": "30 minutes"
+    }
+  },
+  {
+    "id": "sample_0072",
+    "utterance": "Get rid of task TASK-42.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "TASK-42"
+    }
+  },
+  {
+    "id": "sample_0073",
+    "utterance": "Update task T-1001 to status in progress.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1001",
+      "status": "in progress"
+    }
+  },
+  {
+    "id": "sample_0074",
+    "utterance": "Please add a task called 'Finalize project brief' with low priority.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Finalize project brief",
+      "priority": "low"
+    }
+  },
+  {
+    "id": "sample_0075",
+    "utterance": "Get calendar events for next Monday between 11:00 and 12:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "next Monday",
+      "start_time": "11:00",
+      "end_time": "12:00"
+    }
+  },
+  {
+    "id": "sample_0076",
+    "utterance": "Arrange a meeting titled 'Review security findings' with Priya for 2026-09-22, starting 16:00, duration 30 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review security findings",
+      "participants": "Priya",
+      "date": "2026-09-22",
+      "start_time": "16:00",
+      "duration": "30 minutes"
+    }
+  },
+  {
+    "id": "sample_0077",
+    "utterance": "Show my calendar events for 2026-09-24.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-24"
+    }
+  },
+  {
+    "id": "sample_0078",
+    "utterance": "Create a calendar event 'Plan team offsite' on next Monday from 14:30 to 10:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Plan team offsite",
+      "date": "next Monday",
+      "start_time": "14:30",
+      "end_time": "10:00"
+    }
+  },
+  {
+    "id": "sample_0079",
+    "utterance": "Create 'Review security findings' due end of month, priority urgent.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Review security findings",
+      "due_date": "end of month",
+      "priority": "urgent"
+    }
+  },
+  {
+    "id": "sample_0080",
+    "utterance": "Please delete the task with ID T-1178.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1178"
+    }
+  },
+  {
+    "id": "sample_0081",
+    "utterance": "Find DOCX documents about Q4 revenue forecast.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "Q4 revenue forecast",
+      "file_type": "DOCX"
+    }
+  },
+  {
+    "id": "sample_0082",
+    "utterance": "Set up 'Review security findings' with the project team on next Monday at 10:30, lasting 1 hour.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review security findings",
+      "participants": "the project team",
+      "date": "next Monday",
+      "start_time": "10:30",
+      "duration": "1 hour"
+    }
+  },
+  {
+    "id": "sample_0083",
+    "utterance": "Create 'Prepare Q4 report' due end of month, priority high.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "due_date": "end of month",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "sample_0084",
+    "utterance": "Set up a task for 'Fix dashboard metrics' due on next Friday.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "due_date": "next Friday"
+    }
+  },
+  {
+    "id": "sample_0085",
+    "utterance": "Show my calendar events for 2026-09-22.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-22"
+    }
+  },
+  {
+    "id": "sample_0086",
+    "utterance": "Find presentation documents about customer feedback.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "customer feedback",
+      "file_type": "presentation"
+    }
+  },
+  {
+    "id": "sample_0087",
+    "utterance": "Send Let's sync tomorrow to Priya on Slack.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Priya",
+      "message": "Let's sync tomorrow",
+      "channel": "Slack"
+    }
+  },
+  {
+    "id": "sample_0088",
+    "utterance": "Schedule 'Review security findings' with Priya on 2026-09-22 at 16:00 for 90 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review security findings",
+      "participants": "Priya",
+      "date": "2026-09-22",
+      "start_time": "16:00",
+      "duration": "90 minutes"
+    }
+  },
+  {
+    "id": "sample_0089",
+    "utterance": "Update task T-1178: prepare the final summary.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1178",
+      "description": "prepare the final summary"
+    }
+  },
+  {
+    "id": "sample_0090",
+    "utterance": "Remove task TASK-42 from my task list.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "TASK-42"
+    }
+  },
+  {
+    "id": "sample_0091",
+    "utterance": "Search my documents for 'project roadmap'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "project roadmap"
+    }
+  },
+  {
+    "id": "sample_0092",
+    "utterance": "Rename task T-1042 to 'Review security findings'.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1042",
+      "title": "Review security findings"
+    }
+  },
+  {
+    "id": "sample_0093",
+    "utterance": "Add 'Fix dashboard metrics' to my task list.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Fix dashboard metrics"
+    }
+  },
+  {
+    "id": "sample_0094",
+    "utterance": "File a support ticket under billing: 'Review vendor contract'. follow up with the vendor",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Review vendor contract",
+      "description": "follow up with the vendor",
+      "category": "billing"
+    }
+  },
+  {
+    "id": "sample_0095",
+    "utterance": "Send The client moved the meeting to 3 PM to Sam.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Sam",
+      "message": "The client moved the meeting to 3 PM"
+    }
+  },
+  {
+    "id": "sample_0096",
+    "utterance": "Find presentation documents about pricing strategy.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "pricing strategy",
+      "file_type": "presentation"
+    }
+  },
+  {
+    "id": "sample_0097",
+    "utterance": "Get calendar events for 2026-09-24 between 16:00 and 12:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-24",
+      "start_time": "16:00",
+      "end_time": "12:00"
+    }
+  },
+  {
+    "id": "sample_0098",
+    "utterance": "Search my documents for 'security audit'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "security audit"
+    }
+  },
+  {
+    "id": "sample_0099",
+    "utterance": "Please delete the task with ID T-3107.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-3107"
+    }
+  },
+  {
+    "id": "sample_0100",
+    "utterance": "Send The client moved the meeting to 3 PM to Jordan.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Jordan",
+      "message": "The client moved the meeting to 3 PM"
+    }
+  },
+  {
+    "id": "sample_0101",
+    "utterance": "Raise a ticket called 'Update onboarding checklist' with this issue: prepare the final summary",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "description": "prepare the final summary"
+    }
+  },
+  {
+    "id": "sample_0102",
+    "utterance": "Please add a task called 'Fix dashboard metrics' with medium priority.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "sample_0103",
+    "utterance": "Set task T-1042 due date to tomorrow.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1042",
+      "due_date": "tomorrow"
+    }
+  },
+  {
+    "id": "sample_0104",
+    "utterance": "Write to engineering team about 'Budget approval': Please review the attached draft.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "engineering team",
+      "subject": "Budget approval",
+      "body": "Please review the attached draft."
+    }
+  },
+  {
+    "id": "sample_0105",
+    "utterance": "Update task T-1042 to status not started.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1042",
+      "status": "not started"
+    }
+  },
+  {
+    "id": "sample_0106",
+    "utterance": "Create a calendar event 'Fix dashboard metrics' on 2026-09-21 from 14:30 to 14:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "date": "2026-09-21",
+      "start_time": "14:30",
+      "end_time": "14:00"
+    }
+  },
+  {
+    "id": "sample_0107",
+    "utterance": "Open a support ticket for Prepare client presentation. Details: prepare the final summary",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "description": "prepare the final summary"
+    }
+  },
+  {
+    "id": "sample_0108",
+    "utterance": "Please delete the task with ID T-1001.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1001"
+    }
+  },
+  {
+    "id": "sample_0109",
+    "utterance": "Email finance team with subject 'Project update' and body: Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "finance team",
+      "subject": "Project update",
+      "body": "Thanks for your help on this."
+    }
+  },
+  {
+    "id": "sample_0110",
+    "utterance": "Put Plan team offsite on my calendar on tomorrow at 16:00 until 12:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Plan team offsite",
+      "date": "tomorrow",
+      "start_time": "16:00",
+      "end_time": "12:00"
+    }
+  },
+  {
+    "id": "sample_0111",
+    "utterance": "Book a 30 minutes meeting with Rahul and Sam called 'Prepare client presentation' for next Monday at 13:00.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "participants": "Rahul and Sam",
+      "date": "next Monday",
+      "start_time": "13:00",
+      "duration": "30 minutes"
+    }
+  },
+  {
+    "id": "sample_0112",
+    "utterance": "I need a task for Update pricing sheet.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Update pricing sheet"
+    }
+  },
+  {
+    "id": "sample_0113",
+    "utterance": "Create 'Update pricing sheet' due 2026-10-01, priority low.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "due_date": "2026-10-01",
+      "priority": "low"
+    }
+  },
+  {
+    "id": "sample_0114",
+    "utterance": "Search my documents for 'incident report'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "incident report"
+    }
+  },
+  {
+    "id": "sample_0115",
+    "utterance": "Please delete the task with ID T-1042.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1042"
+    }
+  },
+  {
+    "id": "sample_0116",
+    "utterance": "Create 'Prepare Q4 report' and assign it to Priya.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "assignee": "Priya"
+    }
+  },
+  {
+    "id": "sample_0117",
+    "utterance": "Update task T-1042: document the decision.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1042",
+      "description": "document the decision"
+    }
+  },
+  {
+    "id": "sample_0118",
+    "utterance": "Find presentation documents about expense policy.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "expense policy",
+      "file_type": "presentation"
+    }
+  },
+  {
+    "id": "sample_0119",
+    "utterance": "Open a support ticket for Prepare client presentation. Details: document the decision",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "description": "document the decision"
+    }
+  },
+  {
+    "id": "sample_0120",
+    "utterance": "Write to HR team about 'Q4 planning': Please review the attached draft.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "HR team",
+      "subject": "Q4 planning",
+      "body": "Please review the attached draft."
+    }
+  },
+  {
+    "id": "sample_0121",
+    "utterance": "Create a new task: Review vendor contract.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Review vendor contract"
+    }
+  },
+  {
+    "id": "sample_0122",
+    "utterance": "Arrange a meeting titled 'Submit expense report' with Rahul and Sam for 2026-09-21, starting 13:00, duration 45 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Submit expense report",
+      "participants": "Rahul and Sam",
+      "date": "2026-09-21",
+      "start_time": "13:00",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0123",
+    "utterance": "Get calendar events for 2026-09-22 between 10:30 and 14:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-22",
+      "start_time": "10:30",
+      "end_time": "14:00"
+    }
+  },
+  {
+    "id": "sample_0124",
+    "utterance": "What meetings do I have on tomorrow?",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "tomorrow"
+    }
+  },
+  {
+    "id": "sample_0125",
+    "utterance": "Email finance team about 'Q4 planning', cc team@example.com. Body: Can you confirm the latest figures?",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "finance team",
+      "subject": "Q4 planning",
+      "body": "Can you confirm the latest figures?",
+      "cc": "team@example.com"
+    }
+  },
+  {
+    "id": "sample_0126",
+    "utterance": "Message Rahul saying: Let's sync tomorrow",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Rahul",
+      "message": "Let's sync tomorrow"
+    }
+  },
+  {
+    "id": "sample_0127",
+    "utterance": "Message Priya saying: Can you send me the latest numbers?",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Priya",
+      "message": "Can you send me the latest numbers?"
+    }
+  },
+  {
+    "id": "sample_0128",
+    "utterance": "Write to Sam about 'Q4 planning': Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Sam",
+      "subject": "Q4 planning",
+      "body": "Thanks for your help on this."
+    }
+  },
+  {
+    "id": "sample_0129",
+    "utterance": "Create a high priority support ticket: Prepare Q4 report — document the decision",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "description": "document the decision",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "sample_0130",
+    "utterance": "Please add a task called 'Review security findings' with medium priority.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Review security findings",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "sample_0131",
+    "utterance": "Update task T-1001 to status blocked.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1001",
+      "status": "blocked"
+    }
+  },
+  {
+    "id": "sample_0132",
+    "utterance": "Send Please review the draft to Priya on chat.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Priya",
+      "message": "Please review the draft",
+      "channel": "chat"
+    }
+  },
+  {
+    "id": "sample_0133",
+    "utterance": "Cancel and delete task TASK-42.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "TASK-42"
+    }
+  },
+  {
+    "id": "sample_0134",
+    "utterance": "Rename task T-2034 to 'Review vendor contract'.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-2034",
+      "title": "Review vendor contract"
+    }
+  },
+  {
+    "id": "sample_0135",
+    "utterance": "Schedule 'Update pricing sheet' with Priya on 2026-09-24 at 11:00 for 45 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "participants": "Priya",
+      "date": "2026-09-24",
+      "start_time": "11:00",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0136",
+    "utterance": "Message Alex saying: Please approve this when you can",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Alex",
+      "message": "Please approve this when you can"
+    }
+  },
+  {
+    "id": "sample_0137",
+    "utterance": "Cancel and delete task T-1042.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1042"
+    }
+  },
+  {
+    "id": "sample_0138",
+    "utterance": "Create a new task: Fix dashboard metrics.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Fix dashboard metrics"
+    }
+  },
+  {
+    "id": "sample_0139",
+    "utterance": "Get rid of task T-2034.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-2034"
+    }
+  },
+  {
+    "id": "sample_0140",
+    "utterance": "Get calendar events for 2026-09-24 between 09:00 and 14:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-24",
+      "start_time": "09:00",
+      "end_time": "14:00"
+    }
+  },
+  {
+    "id": "sample_0141",
+    "utterance": "Cancel and delete task T-1001.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1001"
+    }
+  },
+  {
+    "id": "sample_0142",
+    "utterance": "Write to engineering team about 'Meeting follow-up': Please share your feedback by Friday.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "engineering team",
+      "subject": "Meeting follow-up",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0143",
+    "utterance": "List my events on 2026-09-24 from 16:00 to 17:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-24",
+      "start_time": "16:00",
+      "end_time": "17:00"
+    }
+  },
+  {
+    "id": "sample_0144",
+    "utterance": "Look through my files for project roadmap.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "project roadmap"
+    }
+  },
+  {
+    "id": "sample_0145",
+    "utterance": "Search the Shared folder for customer feedback.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "customer feedback",
+      "folder": "Shared"
+    }
+  },
+  {
+    "id": "sample_0146",
+    "utterance": "Send The client moved the meeting to 3 PM to engineering team on chat.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "engineering team",
+      "message": "The client moved the meeting to 3 PM",
+      "channel": "chat"
+    }
+  },
+  {
+    "id": "sample_0147",
+    "utterance": "Add a calendar event 'Submit expense report' on tomorrow, 10:30-15:30, with reminder 1 hour before.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Submit expense report",
+      "date": "tomorrow",
+      "start_time": "10:30",
+      "end_time": "15:30",
+      "reminder": "1 hour before"
+    }
+  },
+  {
+    "id": "sample_0148",
+    "utterance": "Please add a task called 'Review vendor contract' with medium priority.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Review vendor contract",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "sample_0149",
+    "utterance": "Book a 1 hour meeting with the finance team called 'Plan team offsite' for 2026-09-21 at 16:00.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Plan team offsite",
+      "participants": "the finance team",
+      "date": "2026-09-21",
+      "start_time": "16:00",
+      "duration": "1 hour"
+    }
+  },
+  {
+    "id": "sample_0150",
+    "utterance": "Set up 'Fix dashboard metrics' with the finance team on tomorrow at 14:30, lasting 1 hour.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "participants": "the finance team",
+      "date": "tomorrow",
+      "start_time": "14:30",
+      "duration": "1 hour"
+    }
+  },
+  {
+    "id": "sample_0151",
+    "utterance": "DM Rahul: Please review the draft",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Rahul",
+      "message": "Please review the draft"
+    }
+  },
+  {
+    "id": "sample_0152",
+    "utterance": "Find presentation documents about Q4 revenue forecast.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "Q4 revenue forecast",
+      "file_type": "presentation"
+    }
+  },
+  {
+    "id": "sample_0153",
+    "utterance": "Send an email to engineering team. Subject: Q4 planning. Message: Can you confirm the latest figures?",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "engineering team",
+      "subject": "Q4 planning",
+      "body": "Can you confirm the latest figures?"
+    }
+  },
+  {
+    "id": "sample_0154",
+    "utterance": "File a support ticket under bug: 'Fix dashboard metrics'. follow up with the vendor",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "description": "follow up with the vendor",
+      "category": "bug"
+    }
+  },
+  {
+    "id": "sample_0155",
+    "utterance": "Send an email to Priya. Subject: Budget approval. Message: Please share your feedback by Friday.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Priya",
+      "subject": "Budget approval",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0156",
+    "utterance": "Get calendar events for next Monday between 11:00 and 10:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "next Monday",
+      "start_time": "11:00",
+      "end_time": "10:00"
+    }
+  },
+  {
+    "id": "sample_0157",
+    "utterance": "Create a new task: Plan team offsite.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Plan team offsite"
+    }
+  },
+  {
+    "id": "sample_0158",
+    "utterance": "Create an event called 'Finalize project brief' for 2026-09-22 from 13:00 to 12:00 at Bengaluru office.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Finalize project brief",
+      "date": "2026-09-22",
+      "start_time": "13:00",
+      "end_time": "12:00",
+      "location": "Bengaluru office"
+    }
+  },
+  {
+    "id": "sample_0159",
+    "utterance": "Send a message to Rahul: 'I finished the analysis'.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Rahul",
+      "message": "I finished the analysis"
+    }
+  },
+  {
+    "id": "sample_0160",
+    "utterance": "Cancel and delete task T-1178.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1178"
+    }
+  },
+  {
+    "id": "sample_0161",
+    "utterance": "Book a 45 minutes meeting with the finance team called 'Review vendor contract' for 2026-09-21 at 13:00.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review vendor contract",
+      "participants": "the finance team",
+      "date": "2026-09-21",
+      "start_time": "13:00",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0162",
+    "utterance": "Create an event called 'Submit expense report' for 2026-09-24 from 11:00 to 11:30 at Conference Room A.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Submit expense report",
+      "date": "2026-09-24",
+      "start_time": "11:00",
+      "end_time": "11:30",
+      "location": "Conference Room A"
+    }
+  },
+  {
+    "id": "sample_0163",
+    "utterance": "Search my documents for 'expense policy'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "expense policy"
+    }
+  },
+  {
+    "id": "sample_0164",
+    "utterance": "Schedule 'Review vendor contract' with the project team on 2026-09-22 at 14:30 for 30 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review vendor contract",
+      "participants": "the project team",
+      "date": "2026-09-22",
+      "start_time": "14:30",
+      "duration": "30 minutes"
+    }
+  },
+  {
+    "id": "sample_0165",
+    "utterance": "Cancel and delete task T-3107.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-3107"
+    }
+  },
+  {
+    "id": "sample_0166",
+    "utterance": "Cancel and delete task T-1042.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1042"
+    }
+  },
+  {
+    "id": "sample_0167",
+    "utterance": "Create a urgent priority support ticket: Prepare client presentation — follow up with the vendor",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "description": "follow up with the vendor",
+      "priority": "urgent"
+    }
+  },
+  {
+    "id": "sample_0168",
+    "utterance": "Book a 45 minutes meeting with Priya called 'Update onboarding checklist' for 2026-10-02 at 09:00.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "participants": "Priya",
+      "date": "2026-10-02",
+      "start_time": "09:00",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0169",
+    "utterance": "DM HR team: Let's sync tomorrow",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "HR team",
+      "message": "Let's sync tomorrow"
+    }
+  },
+  {
+    "id": "sample_0170",
+    "utterance": "What meetings do I have on 2026-09-24?",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-24"
+    }
+  },
+  {
+    "id": "sample_0171",
+    "utterance": "Send an email to Rahul. Subject: Project update. Message: Let's discuss this in our next meeting.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Rahul",
+      "subject": "Project update",
+      "body": "Let's discuss this in our next meeting."
+    }
+  },
+  {
+    "id": "sample_0172",
+    "utterance": "Show my calendar events for 2026-10-02.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-10-02"
+    }
+  },
+  {
+    "id": "sample_0173",
+    "utterance": "Look through my files for onboarding process.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "onboarding process"
+    }
+  },
+  {
+    "id": "sample_0174",
+    "utterance": "Change task T-1178's priority to low.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1178",
+      "priority": "low"
+    }
+  },
+  {
+    "id": "sample_0175",
+    "utterance": "Send a message to Priya: 'Let's sync tomorrow'.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Priya",
+      "message": "Let's sync tomorrow"
+    }
+  },
+  {
+    "id": "sample_0176",
+    "utterance": "Remove task TASK-42 from my task list.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "TASK-42"
+    }
+  },
+  {
+    "id": "sample_0177",
+    "utterance": "Email engineering team about 'Meeting follow-up', cc manager@example.com. Body: Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "engineering team",
+      "subject": "Meeting follow-up",
+      "body": "Thanks for your help on this.",
+      "cc": "manager@example.com"
+    }
+  },
+  {
+    "id": "sample_0178",
+    "utterance": "What meetings do I have on 2026-10-02?",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-10-02"
+    }
+  },
+  {
+    "id": "sample_0179",
+    "utterance": "Create a support ticket titled 'Finalize project brief': review the latest draft",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Finalize project brief",
+      "description": "review the latest draft"
+    }
+  },
+  {
+    "id": "sample_0180",
+    "utterance": "Create a low priority support ticket: Review vendor contract — follow up with the vendor",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Review vendor contract",
+      "description": "follow up with the vendor",
+      "priority": "low"
+    }
+  },
+  {
+    "id": "sample_0181",
+    "utterance": "Send an email to finance team. Subject: Project update. Message: Please share your feedback by Friday.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "finance team",
+      "subject": "Project update",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0182",
+    "utterance": "Schedule 'Plan team offsite' with the project team at 10:30 on 2026-09-21 for 1 hour in Conference Room A.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Plan team offsite",
+      "participants": "the project team",
+      "date": "2026-09-21",
+      "start_time": "10:30",
+      "duration": "1 hour",
+      "location": "Conference Room A"
+    }
+  },
+  {
+    "id": "sample_0183",
+    "utterance": "Write to Priya about 'Meeting follow-up': Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Priya",
+      "subject": "Meeting follow-up",
+      "body": "Thanks for your help on this."
+    }
+  },
+  {
+    "id": "sample_0184",
+    "utterance": "Get calendar events for 2026-10-02 between 14:30 and 15:30.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-10-02",
+      "start_time": "14:30",
+      "end_time": "15:30"
+    }
+  },
+  {
+    "id": "sample_0185",
+    "utterance": "Add a calendar event 'Prepare Q4 report' on 2026-09-24, 14:30-14:00, with reminder 30 minutes before.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "date": "2026-09-24",
+      "start_time": "14:30",
+      "end_time": "14:00",
+      "reminder": "30 minutes before"
+    }
+  },
+  {
+    "id": "sample_0186",
+    "utterance": "Message Alex saying: Please review the draft",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Alex",
+      "message": "Please review the draft"
+    }
+  },
+  {
+    "id": "sample_0187",
+    "utterance": "Arrange a meeting titled 'Prepare Q4 report' with Priya for 2026-10-02, starting 13:00, duration 30 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "participants": "Priya",
+      "date": "2026-10-02",
+      "start_time": "13:00",
+      "duration": "30 minutes"
+    }
+  },
+  {
+    "id": "sample_0188",
+    "utterance": "Send an email to Sam. Subject: Meeting follow-up. Message: Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Sam",
+      "subject": "Meeting follow-up",
+      "body": "Thanks for your help on this."
+    }
+  },
+  {
+    "id": "sample_0189",
+    "utterance": "Set up a task for 'Finalize project brief' due on 2026-10-01.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Finalize project brief",
+      "due_date": "2026-10-01"
+    }
+  },
+  {
+    "id": "sample_0190",
+    "utterance": "Remove task T-1042 from my task list.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1042"
+    }
+  },
+  {
+    "id": "sample_0191",
+    "utterance": "Create a task titled 'Update pricing sheet'.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Update pricing sheet"
+    }
+  },
+  {
+    "id": "sample_0192",
+    "utterance": "Raise a ticket called 'Finalize project brief' with this issue: follow up with the vendor",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Finalize project brief",
+      "description": "follow up with the vendor"
+    }
+  },
+  {
+    "id": "sample_0193",
+    "utterance": "Book a 30 minutes meeting with Alex and Priya called 'Plan team offsite' for 2026-09-24 at 14:30.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Plan team offsite",
+      "participants": "Alex and Priya",
+      "date": "2026-09-24",
+      "start_time": "14:30",
+      "duration": "30 minutes"
+    }
+  },
+  {
+    "id": "sample_0194",
+    "utterance": "DM Sam: I finished the analysis",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Sam",
+      "message": "I finished the analysis"
+    }
+  },
+  {
+    "id": "sample_0195",
+    "utterance": "Create a support ticket titled 'Plan team offsite': update the acceptance criteria",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Plan team offsite",
+      "description": "update the acceptance criteria"
+    }
+  },
+  {
+    "id": "sample_0196",
+    "utterance": "Email Priya about 'Contract review', cc manager@example.com. Body: Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Priya",
+      "subject": "Contract review",
+      "body": "Thanks for your help on this.",
+      "cc": "manager@example.com"
+    }
+  },
+  {
+    "id": "sample_0197",
+    "utterance": "Create a calendar event 'Submit expense report' on 2026-09-22 from 10:30 to 11:30.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Submit expense report",
+      "date": "2026-09-22",
+      "start_time": "10:30",
+      "end_time": "11:30"
+    }
+  },
+  {
+    "id": "sample_0198",
+    "utterance": "Create an event called 'Prepare client presentation' for 2026-09-21 from 13:00 to 12:00 at Google Meet.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "date": "2026-09-21",
+      "start_time": "13:00",
+      "end_time": "12:00",
+      "location": "Google Meet"
+    }
+  },
+  {
+    "id": "sample_0199",
+    "utterance": "Look through my files for customer feedback.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "customer feedback"
+    }
+  },
+  {
+    "id": "sample_0200",
+    "utterance": "Update task T-1178 to status completed.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1178",
+      "status": "completed"
+    }
+  },
+  {
+    "id": "sample_0201",
+    "utterance": "Send Contract review to Priya saying Please share your feedback by Friday..",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Priya",
+      "subject": "Contract review",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0202",
+    "utterance": "Delete task TASK-42.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "TASK-42"
+    }
+  },
+  {
+    "id": "sample_0203",
+    "utterance": "Create a support ticket titled 'Review security findings': prepare the final summary",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Review security findings",
+      "description": "prepare the final summary"
+    }
+  },
+  {
+    "id": "sample_0204",
+    "utterance": "File a support ticket under account access: 'Update onboarding checklist'. follow up with the vendor",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "description": "follow up with the vendor",
+      "category": "account access"
+    }
+  },
+  {
+    "id": "sample_0205",
+    "utterance": "Show my calendar events for 2026-10-02.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-10-02"
+    }
+  },
+  {
+    "id": "sample_0206",
+    "utterance": "Add 'Review security findings' to my task list.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Review security findings"
+    }
+  },
+  {
+    "id": "sample_0207",
+    "utterance": "Delete task T-1178.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1178"
+    }
+  },
+  {
+    "id": "sample_0208",
+    "utterance": "Create a calendar event 'Update pricing sheet' on 2026-09-21 from 11:00 to 11:30.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "date": "2026-09-21",
+      "start_time": "11:00",
+      "end_time": "11:30"
+    }
+  },
+  {
+    "id": "sample_0209",
+    "utterance": "Look through my files for project roadmap.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "project roadmap"
+    }
+  },
+  {
+    "id": "sample_0210",
+    "utterance": "Update task TASK-42 to status blocked.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "TASK-42",
+      "status": "blocked"
+    }
+  },
+  {
+    "id": "sample_0211",
+    "utterance": "Raise a ticket called 'Review vendor contract' with this issue: follow up with the vendor",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Review vendor contract",
+      "description": "follow up with the vendor"
+    }
+  },
+  {
+    "id": "sample_0212",
+    "utterance": "Update task T-1042: document the decision.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1042",
+      "description": "document the decision"
+    }
+  },
+  {
+    "id": "sample_0213",
+    "utterance": "Find XLSX documents about onboarding process.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "onboarding process",
+      "file_type": "XLSX"
+    }
+  },
+  {
+    "id": "sample_0214",
+    "utterance": "Create a calendar event 'Update onboarding checklist' on 2026-09-24 from 09:00 to 15:30.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "date": "2026-09-24",
+      "start_time": "09:00",
+      "end_time": "15:30"
+    }
+  },
+  {
+    "id": "sample_0215",
+    "utterance": "Send Please approve this when you can to Rahul on Slack.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Rahul",
+      "message": "Please approve this when you can",
+      "channel": "Slack"
+    }
+  },
+  {
+    "id": "sample_0216",
+    "utterance": "Assign task T-1178 to Taylor.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1178",
+      "assignee": "Taylor"
+    }
+  },
+  {
+    "id": "sample_0217",
+    "utterance": "I need a task for Review vendor contract.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Review vendor contract"
+    }
+  },
+  {
+    "id": "sample_0218",
+    "utterance": "Search my documents for 'Q4 revenue forecast'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "Q4 revenue forecast"
+    }
+  },
+  {
+    "id": "sample_0219",
+    "utterance": "Message HR team saying: The client moved the meeting to 3 PM",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "HR team",
+      "message": "The client moved the meeting to 3 PM"
+    }
+  },
+  {
+    "id": "sample_0220",
+    "utterance": "What meetings do I have on next Monday?",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "next Monday"
+    }
+  },
+  {
+    "id": "sample_0221",
+    "utterance": "Search my documents for 'security audit'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "security audit"
+    }
+  },
+  {
+    "id": "sample_0222",
+    "utterance": "Send a message to Priya: 'Let's sync tomorrow'.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Priya",
+      "message": "Let's sync tomorrow"
+    }
+  },
+  {
+    "id": "sample_0223",
+    "utterance": "Put Prepare client presentation on my calendar on 2026-09-24 at 11:00 until 12:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "date": "2026-09-24",
+      "start_time": "11:00",
+      "end_time": "12:00"
+    }
+  },
+  {
+    "id": "sample_0224",
+    "utterance": "Message Priya saying: I finished the analysis",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Priya",
+      "message": "I finished the analysis"
+    }
+  },
+  {
+    "id": "sample_0225",
+    "utterance": "Create 'Review vendor contract' due 2026-09-20, priority low.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Review vendor contract",
+      "due_date": "2026-09-20",
+      "priority": "low"
+    }
+  },
+  {
+    "id": "sample_0226",
+    "utterance": "Get rid of task T-1042.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1042"
+    }
+  },
+  {
+    "id": "sample_0227",
+    "utterance": "Send a message to Priya: 'Please review the draft'.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Priya",
+      "message": "Please review the draft"
+    }
+  },
+  {
+    "id": "sample_0228",
+    "utterance": "Update task T-2034 to status not started.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-2034",
+      "status": "not started"
+    }
+  },
+  {
+    "id": "sample_0229",
+    "utterance": "Search my documents for 'expense policy'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "expense policy"
+    }
+  },
+  {
+    "id": "sample_0230",
+    "utterance": "Create a task titled 'Finalize project brief'.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Finalize project brief"
+    }
+  },
+  {
+    "id": "sample_0231",
+    "utterance": "Search my documents for 'security audit'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "security audit"
+    }
+  },
+  {
+    "id": "sample_0232",
+    "utterance": "Set up a task for 'Review vendor contract' due on 2026-10-01.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Review vendor contract",
+      "due_date": "2026-10-01"
+    }
+  },
+  {
+    "id": "sample_0233",
+    "utterance": "Update task T-1001: prepare the final summary.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1001",
+      "description": "prepare the final summary"
+    }
+  },
+  {
+    "id": "sample_0234",
+    "utterance": "Search my documents for 'pricing strategy'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "pricing strategy"
+    }
+  },
+  {
+    "id": "sample_0235",
+    "utterance": "Set up 'Review security findings' with the project team on 2026-09-24 at 14:30, lasting 45 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review security findings",
+      "participants": "the project team",
+      "date": "2026-09-24",
+      "start_time": "14:30",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0236",
+    "utterance": "Schedule 'Prepare Q4 report' with Alex and Priya on 2026-09-22 at 16:00 for 1 hour.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "participants": "Alex and Priya",
+      "date": "2026-09-22",
+      "start_time": "16:00",
+      "duration": "1 hour"
+    }
+  },
+  {
+    "id": "sample_0237",
+    "utterance": "Assign task T-2034 to Taylor.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-2034",
+      "assignee": "Taylor"
+    }
+  },
+  {
+    "id": "sample_0238",
+    "utterance": "File a support ticket under integration: 'Fix dashboard metrics'. follow up with the vendor",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "description": "follow up with the vendor",
+      "category": "integration"
+    }
+  },
+  {
+    "id": "sample_0239",
+    "utterance": "Add 'Update pricing sheet' to my task list.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Update pricing sheet"
+    }
+  },
+  {
+    "id": "sample_0240",
+    "utterance": "Please delete the task with ID TASK-42.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "TASK-42"
+    }
+  },
+  {
+    "id": "sample_0241",
+    "utterance": "Send an email to Sam. Subject: Q4 planning. Message: Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Sam",
+      "subject": "Q4 planning",
+      "body": "Thanks for your help on this."
+    }
+  },
+  {
+    "id": "sample_0242",
+    "utterance": "Schedule 'Update pricing sheet' with the finance team at 13:00 on tomorrow for 45 minutes in Google Meet.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "participants": "the finance team",
+      "date": "tomorrow",
+      "start_time": "13:00",
+      "duration": "45 minutes",
+      "location": "Google Meet"
+    }
+  },
+  {
+    "id": "sample_0243",
+    "utterance": "Create a medium priority support ticket: Prepare client presentation — prepare the final summary",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "description": "prepare the final summary",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "sample_0244",
+    "utterance": "Search my documents for 'expense policy'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "expense policy"
+    }
+  },
+  {
+    "id": "sample_0245",
+    "utterance": "Rename task T-3107 to 'Review vendor contract'.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-3107",
+      "title": "Review vendor contract"
+    }
+  },
+  {
+    "id": "sample_0246",
+    "utterance": "Show my team calendar on tomorrow.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "tomorrow",
+      "calendar": "team"
+    }
+  },
+  {
+    "id": "sample_0247",
+    "utterance": "Send an email to Priya. Subject: Budget approval. Message: Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Priya",
+      "subject": "Budget approval",
+      "body": "Thanks for your help on this."
+    }
+  },
+  {
+    "id": "sample_0248",
+    "utterance": "Arrange a meeting titled 'Prepare client presentation' with the finance team for next Monday, starting 10:30, duration 90 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "participants": "the finance team",
+      "date": "next Monday",
+      "start_time": "10:30",
+      "duration": "90 minutes"
+    }
+  },
+  {
+    "id": "sample_0249",
+    "utterance": "Add 'Prepare client presentation' to my calendar for 2026-09-22, 11:00-12:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "date": "2026-09-22",
+      "start_time": "11:00",
+      "end_time": "12:00"
+    }
+  },
+  {
+    "id": "sample_0250",
+    "utterance": "Book a 45 minutes meeting with Alex and Priya called 'Prepare client presentation' for 2026-09-24 at 10:30.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "participants": "Alex and Priya",
+      "date": "2026-09-24",
+      "start_time": "10:30",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0251",
+    "utterance": "Book a 45 minutes meeting with Alex and Priya called 'Review vendor contract' for tomorrow at 13:00.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review vendor contract",
+      "participants": "Alex and Priya",
+      "date": "tomorrow",
+      "start_time": "13:00",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0252",
+    "utterance": "Show my calendar events for 2026-09-22.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-22"
+    }
+  },
+  {
+    "id": "sample_0253",
+    "utterance": "Delete task T-2034.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-2034"
+    }
+  },
+  {
+    "id": "sample_0254",
+    "utterance": "Show my team calendar on 2026-09-24.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-24",
+      "calendar": "team"
+    }
+  },
+  {
+    "id": "sample_0255",
+    "utterance": "Search my documents for 'onboarding process'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "onboarding process"
+    }
+  },
+  {
+    "id": "sample_0256",
+    "utterance": "Rename task T-1001 to 'Review vendor contract'.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1001",
+      "title": "Review vendor contract"
+    }
+  },
+  {
+    "id": "sample_0257",
+    "utterance": "Change task T-3107's priority to high.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-3107",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "sample_0258",
+    "utterance": "Search my documents for 'Q4 revenue forecast'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "Q4 revenue forecast"
+    }
+  },
+  {
+    "id": "sample_0259",
+    "utterance": "Find documents containing customer feedback.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "customer feedback"
+    }
+  },
+  {
+    "id": "sample_0260",
+    "utterance": "Show my shared calendar on 2026-10-02.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-10-02",
+      "calendar": "shared"
+    }
+  },
+  {
+    "id": "sample_0261",
+    "utterance": "Assign task T-3107 to Priya.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-3107",
+      "assignee": "Priya"
+    }
+  },
+  {
+    "id": "sample_0262",
+    "utterance": "Get calendar events for 2026-09-24 between 10:30 and 15:30.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-24",
+      "start_time": "10:30",
+      "end_time": "15:30"
+    }
+  },
+  {
+    "id": "sample_0263",
+    "utterance": "Create a low priority support ticket: Review security findings — follow up with the vendor",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Review security findings",
+      "description": "follow up with the vendor",
+      "priority": "low"
+    }
+  },
+  {
+    "id": "sample_0264",
+    "utterance": "Send an email to Priya. Subject: Project update. Message: Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Priya",
+      "subject": "Project update",
+      "body": "Thanks for your help on this."
+    }
+  },
+  {
+    "id": "sample_0265",
+    "utterance": "Send a message to Sam: 'Please approve this when you can'.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Sam",
+      "message": "Please approve this when you can"
+    }
+  },
+  {
+    "id": "sample_0266",
+    "utterance": "Search documents from this month for expense policy.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "expense policy",
+      "date_range": "this month"
+    }
+  },
+  {
+    "id": "sample_0267",
+    "utterance": "Delete task T-1178.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1178"
+    }
+  },
+  {
+    "id": "sample_0268",
+    "utterance": "File a support ticket under billing: 'Update onboarding checklist'. document the decision",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "description": "document the decision",
+      "category": "billing"
+    }
+  },
+  {
+    "id": "sample_0269",
+    "utterance": "Assign task T-3107 to Taylor.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-3107",
+      "assignee": "Taylor"
+    }
+  },
+  {
+    "id": "sample_0270",
+    "utterance": "Send Q4 planning to Sam saying Let's discuss this in our next meeting..",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Sam",
+      "subject": "Q4 planning",
+      "body": "Let's discuss this in our next meeting."
+    }
+  },
+  {
+    "id": "sample_0271",
+    "utterance": "Set up 'Finalize project brief' with the project team on tomorrow at 13:00, lasting 1 hour.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Finalize project brief",
+      "participants": "the project team",
+      "date": "tomorrow",
+      "start_time": "13:00",
+      "duration": "1 hour"
+    }
+  },
+  {
+    "id": "sample_0272",
+    "utterance": "DM Sam: Please approve this when you can",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Sam",
+      "message": "Please approve this when you can"
+    }
+  },
+  {
+    "id": "sample_0273",
+    "utterance": "Assign task T-1178 to Priya.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1178",
+      "assignee": "Priya"
+    }
+  },
+  {
+    "id": "sample_0274",
+    "utterance": "Create a support ticket titled 'Plan team offsite': review the latest draft",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Plan team offsite",
+      "description": "review the latest draft"
+    }
+  },
+  {
+    "id": "sample_0275",
+    "utterance": "Schedule 'Plan team offsite' with Alex and Priya on 2026-09-21 at 11:00 for 45 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Plan team offsite",
+      "participants": "Alex and Priya",
+      "date": "2026-09-21",
+      "start_time": "11:00",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0276",
+    "utterance": "Send Meeting follow-up to Rahul saying Please review the attached draft..",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Rahul",
+      "subject": "Meeting follow-up",
+      "body": "Please review the attached draft."
+    }
+  },
+  {
+    "id": "sample_0277",
+    "utterance": "Raise a ticket called 'Update onboarding checklist' with this issue: update the acceptance criteria",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "description": "update the acceptance criteria"
+    }
+  },
+  {
+    "id": "sample_0278",
+    "utterance": "Get calendar events for 2026-09-21 between 10:30 and 14:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-21",
+      "start_time": "10:30",
+      "end_time": "14:00"
+    }
+  },
+  {
+    "id": "sample_0279",
+    "utterance": "Send The client moved the meeting to 3 PM to HR team on Teams.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "HR team",
+      "message": "The client moved the meeting to 3 PM",
+      "channel": "Teams"
+    }
+  },
+  {
+    "id": "sample_0280",
+    "utterance": "Add a calendar event 'Submit expense report' on next Monday, 09:00-10:00, with reminder 1 hour before.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Submit expense report",
+      "date": "next Monday",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "reminder": "1 hour before"
+    }
+  },
+  {
+    "id": "sample_0281",
+    "utterance": "Schedule 'Review security findings' with the finance team at 11:00 on 2026-09-21 for 1 hour in Google Meet.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review security findings",
+      "participants": "the finance team",
+      "date": "2026-09-21",
+      "start_time": "11:00",
+      "duration": "1 hour",
+      "location": "Google Meet"
+    }
+  },
+  {
+    "id": "sample_0282",
+    "utterance": "Write to Rahul about 'Project update': Please share your feedback by Friday.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Rahul",
+      "subject": "Project update",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0283",
+    "utterance": "Email finance team about 'Q4 planning', cc team@example.com. Body: Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "finance team",
+      "subject": "Q4 planning",
+      "body": "Thanks for your help on this.",
+      "cc": "team@example.com"
+    }
+  },
+  {
+    "id": "sample_0284",
+    "utterance": "I need a task for Submit expense report.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Submit expense report"
+    }
+  },
+  {
+    "id": "sample_0285",
+    "utterance": "Create an event called 'Prepare client presentation' for tomorrow from 10:30 to 17:00 at Google Meet.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "date": "tomorrow",
+      "start_time": "10:30",
+      "end_time": "17:00",
+      "location": "Google Meet"
+    }
+  },
+  {
+    "id": "sample_0286",
+    "utterance": "Create a calendar event 'Plan team offsite' on tomorrow from 16:00 to 14:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Plan team offsite",
+      "date": "tomorrow",
+      "start_time": "16:00",
+      "end_time": "14:00"
+    }
+  },
+  {
+    "id": "sample_0287",
+    "utterance": "Set up a task for 'Review security findings' due on tomorrow.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Review security findings",
+      "due_date": "tomorrow"
+    }
+  },
+  {
+    "id": "sample_0288",
+    "utterance": "Update task T-1042: prepare the final summary.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1042",
+      "description": "prepare the final summary"
+    }
+  },
+  {
+    "id": "sample_0289",
+    "utterance": "Send a message to engineering team: 'Can you send me the latest numbers?'.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "engineering team",
+      "message": "Can you send me the latest numbers?"
+    }
+  },
+  {
+    "id": "sample_0290",
+    "utterance": "Search documents from last week for project roadmap.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "project roadmap",
+      "date_range": "last week"
+    }
+  },
+  {
+    "id": "sample_0291",
+    "utterance": "Create a new task: Fix dashboard metrics.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Fix dashboard metrics"
+    }
+  },
+  {
+    "id": "sample_0292",
+    "utterance": "Show my calendar events for 2026-10-02.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-10-02"
+    }
+  },
+  {
+    "id": "sample_0293",
+    "utterance": "File a support ticket under bug: 'Submit expense report'. prepare the final summary",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Submit expense report",
+      "description": "prepare the final summary",
+      "category": "bug"
+    }
+  },
+  {
+    "id": "sample_0294",
+    "utterance": "Show my team calendar on 2026-10-02.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-10-02",
+      "calendar": "team"
+    }
+  },
+  {
+    "id": "sample_0295",
+    "utterance": "Send an email to HR team. Subject: Q4 planning. Message: Can you confirm the latest figures?",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "HR team",
+      "subject": "Q4 planning",
+      "body": "Can you confirm the latest figures?"
+    }
+  },
+  {
+    "id": "sample_0296",
+    "utterance": "Remove task T-1178 from my task list.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1178"
+    }
+  },
+  {
+    "id": "sample_0297",
+    "utterance": "Set up 'Prepare Q4 report' with Alex on next Monday at 13:00, lasting 1 hour.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "participants": "Alex",
+      "date": "next Monday",
+      "start_time": "13:00",
+      "duration": "1 hour"
+    }
+  },
+  {
+    "id": "sample_0298",
+    "utterance": "Assign task TASK-42 to Alex.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "TASK-42",
+      "assignee": "Alex"
+    }
+  },
+  {
+    "id": "sample_0299",
+    "utterance": "Book a 1 hour meeting with Alex and Priya called 'Review vendor contract' for tomorrow at 16:00.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review vendor contract",
+      "participants": "Alex and Priya",
+      "date": "tomorrow",
+      "start_time": "16:00",
+      "duration": "1 hour"
+    }
+  },
+  {
+    "id": "sample_0300",
+    "utterance": "Schedule 'Fix dashboard metrics' with the project team on 2026-09-24 at 10:30 for 45 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "participants": "the project team",
+      "date": "2026-09-24",
+      "start_time": "10:30",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0301",
+    "utterance": "DM Rahul: Can you send me the latest numbers?",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Rahul",
+      "message": "Can you send me the latest numbers?"
+    }
+  },
+  {
+    "id": "sample_0302",
+    "utterance": "Send Q4 planning to Alex saying Thanks for your help on this..",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Alex",
+      "subject": "Q4 planning",
+      "body": "Thanks for your help on this."
+    }
+  },
+  {
+    "id": "sample_0303",
+    "utterance": "Show my calendar events for 2026-10-02.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-10-02"
+    }
+  },
+  {
+    "id": "sample_0304",
+    "utterance": "Cancel and delete task T-1178.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1178"
+    }
+  },
+  {
+    "id": "sample_0305",
+    "utterance": "Open a support ticket for Plan team offsite. Details: document the decision",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Plan team offsite",
+      "description": "document the decision"
+    }
+  },
+  {
+    "id": "sample_0306",
+    "utterance": "Cancel and delete task T-1001.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1001"
+    }
+  },
+  {
+    "id": "sample_0307",
+    "utterance": "Create 'Review vendor contract' and assign it to Alex.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Review vendor contract",
+      "assignee": "Alex"
+    }
+  },
+  {
+    "id": "sample_0308",
+    "utterance": "DM Priya: Please approve this when you can",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Priya",
+      "message": "Please approve this when you can"
+    }
+  },
+  {
+    "id": "sample_0309",
+    "utterance": "Schedule 'Plan team offsite' with Rahul and Sam on 2026-09-24 at 16:00 for 90 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Plan team offsite",
+      "participants": "Rahul and Sam",
+      "date": "2026-09-24",
+      "start_time": "16:00",
+      "duration": "90 minutes"
+    }
+  },
+  {
+    "id": "sample_0310",
+    "utterance": "Arrange a meeting titled 'Plan team offsite' with Priya for next Monday, starting 11:00, duration 90 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Plan team offsite",
+      "participants": "Priya",
+      "date": "next Monday",
+      "start_time": "11:00",
+      "duration": "90 minutes"
+    }
+  },
+  {
+    "id": "sample_0311",
+    "utterance": "Create an event called 'Review vendor contract' for tomorrow from 10:30 to 14:00 at Bengaluru office.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Review vendor contract",
+      "date": "tomorrow",
+      "start_time": "10:30",
+      "end_time": "14:00",
+      "location": "Bengaluru office"
+    }
+  },
+  {
+    "id": "sample_0312",
+    "utterance": "Get rid of task TASK-42.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "TASK-42"
+    }
+  },
+  {
+    "id": "sample_0313",
+    "utterance": "Set task T-2034 due date to tomorrow.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-2034",
+      "due_date": "tomorrow"
+    }
+  },
+  {
+    "id": "sample_0314",
+    "utterance": "Write to finance team about 'Meeting follow-up': Can you confirm the latest figures?",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "finance team",
+      "subject": "Meeting follow-up",
+      "body": "Can you confirm the latest figures?"
+    }
+  },
+  {
+    "id": "sample_0315",
+    "utterance": "Send Can you send me the latest numbers? to Sam on chat.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Sam",
+      "message": "Can you send me the latest numbers?",
+      "channel": "chat"
+    }
+  },
+  {
+    "id": "sample_0316",
+    "utterance": "Send an email to Sam. Subject: Meeting follow-up. Message: Let's discuss this in our next meeting.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Sam",
+      "subject": "Meeting follow-up",
+      "body": "Let's discuss this in our next meeting."
+    }
+  },
+  {
+    "id": "sample_0317",
+    "utterance": "Set up a task for 'Finalize project brief' due on 2026-09-25.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Finalize project brief",
+      "due_date": "2026-09-25"
+    }
+  },
+  {
+    "id": "sample_0318",
+    "utterance": "Please delete the task with ID TASK-42.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "TASK-42"
+    }
+  },
+  {
+    "id": "sample_0319",
+    "utterance": "Add 'Prepare Q4 report' to my calendar for 2026-09-24, 13:00-10:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "date": "2026-09-24",
+      "start_time": "13:00",
+      "end_time": "10:00"
+    }
+  },
+  {
+    "id": "sample_0320",
+    "utterance": "Put Prepare client presentation on my calendar on 2026-10-02 at 13:00 until 12:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "date": "2026-10-02",
+      "start_time": "13:00",
+      "end_time": "12:00"
+    }
+  },
+  {
+    "id": "sample_0321",
+    "utterance": "Search documents from the past 30 days for expense policy.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "expense policy",
+      "date_range": "the past 30 days"
+    }
+  },
+  {
+    "id": "sample_0322",
+    "utterance": "DM finance team: Please review the draft",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "finance team",
+      "message": "Please review the draft"
+    }
+  },
+  {
+    "id": "sample_0323",
+    "utterance": "Rename task T-2034 to 'Plan team offsite'.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-2034",
+      "title": "Plan team offsite"
+    }
+  },
+  {
+    "id": "sample_0324",
+    "utterance": "Create a task titled 'Prepare client presentation'.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Prepare client presentation"
+    }
+  },
+  {
+    "id": "sample_0325",
+    "utterance": "Email finance team about 'Q4 planning', cc finance@example.com. Body: Let's discuss this in our next meeting.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "finance team",
+      "subject": "Q4 planning",
+      "body": "Let's discuss this in our next meeting.",
+      "cc": "finance@example.com"
+    }
+  },
+  {
+    "id": "sample_0326",
+    "utterance": "Add a calendar event 'Submit expense report' on 2026-09-21, 14:30-17:00, with reminder 10 minutes before.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Submit expense report",
+      "date": "2026-09-21",
+      "start_time": "14:30",
+      "end_time": "17:00",
+      "reminder": "10 minutes before"
+    }
+  },
+  {
+    "id": "sample_0327",
+    "utterance": "Add a calendar event 'Submit expense report' on 2026-09-24, 09:00-11:30, with reminder 30 minutes before.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Submit expense report",
+      "date": "2026-09-24",
+      "start_time": "09:00",
+      "end_time": "11:30",
+      "reminder": "30 minutes before"
+    }
+  },
+  {
+    "id": "sample_0328",
+    "utterance": "Add a calendar event 'Update onboarding checklist' on 2026-09-24, 09:00-10:00, with reminder 30 minutes before.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "date": "2026-09-24",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "reminder": "30 minutes before"
+    }
+  },
+  {
+    "id": "sample_0329",
+    "utterance": "Schedule 'Fix dashboard metrics' with the finance team on 2026-09-24 at 11:00 for 30 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "participants": "the finance team",
+      "date": "2026-09-24",
+      "start_time": "11:00",
+      "duration": "30 minutes"
+    }
+  },
+  {
+    "id": "sample_0330",
+    "utterance": "Show my team calendar on 2026-09-21.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-21",
+      "calendar": "team"
+    }
+  },
+  {
+    "id": "sample_0331",
+    "utterance": "DM Priya: The client moved the meeting to 3 PM",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Priya",
+      "message": "The client moved the meeting to 3 PM"
+    }
+  },
+  {
+    "id": "sample_0332",
+    "utterance": "Add 'Review security findings' to my task list.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Review security findings"
+    }
+  },
+  {
+    "id": "sample_0333",
+    "utterance": "Find presentation documents about project roadmap.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "project roadmap",
+      "file_type": "presentation"
+    }
+  },
+  {
+    "id": "sample_0334",
+    "utterance": "Change task T-2034's priority to urgent.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-2034",
+      "priority": "urgent"
+    }
+  },
+  {
+    "id": "sample_0335",
+    "utterance": "Raise a ticket called 'Prepare client presentation' with this issue: update the acceptance criteria",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "description": "update the acceptance criteria"
+    }
+  },
+  {
+    "id": "sample_0336",
+    "utterance": "Create 'Submit expense report' and assign it to Rahul.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Submit expense report",
+      "assignee": "Rahul"
+    }
+  },
+  {
+    "id": "sample_0337",
+    "utterance": "Message Jordan saying: I finished the analysis",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Jordan",
+      "message": "I finished the analysis"
+    }
+  },
+  {
+    "id": "sample_0338",
+    "utterance": "Email HR team with subject 'Project update' and body: Can you confirm the latest figures?",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "HR team",
+      "subject": "Project update",
+      "body": "Can you confirm the latest figures?"
+    }
+  },
+  {
+    "id": "sample_0339",
+    "utterance": "Add 'Finalize project brief' to my calendar for 2026-09-22, 11:00-10:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Finalize project brief",
+      "date": "2026-09-22",
+      "start_time": "11:00",
+      "end_time": "10:00"
+    }
+  },
+  {
+    "id": "sample_0340",
+    "utterance": "Find documents containing onboarding process.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "onboarding process"
+    }
+  },
+  {
+    "id": "sample_0341",
+    "utterance": "Change task T-1001's priority to high.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1001",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "sample_0342",
+    "utterance": "Please add a task called 'Submit expense report' with urgent priority.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Submit expense report",
+      "priority": "urgent"
+    }
+  },
+  {
+    "id": "sample_0343",
+    "utterance": "Create 'Review security findings' due 2026-10-01, priority medium.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Review security findings",
+      "due_date": "2026-10-01",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "sample_0344",
+    "utterance": "Create a support ticket titled 'Plan team offsite': document the decision",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Plan team offsite",
+      "description": "document the decision"
+    }
+  },
+  {
+    "id": "sample_0345",
+    "utterance": "Arrange a meeting titled 'Update pricing sheet' with Rahul and Sam for tomorrow, starting 11:00, duration 90 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "participants": "Rahul and Sam",
+      "date": "tomorrow",
+      "start_time": "11:00",
+      "duration": "90 minutes"
+    }
+  },
+  {
+    "id": "sample_0346",
+    "utterance": "Search the Legal folder for incident report.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "incident report",
+      "folder": "Legal"
+    }
+  },
+  {
+    "id": "sample_0347",
+    "utterance": "File a support ticket under technical issue: 'Review security findings'. update the acceptance criteria",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Review security findings",
+      "description": "update the acceptance criteria",
+      "category": "technical issue"
+    }
+  },
+  {
+    "id": "sample_0348",
+    "utterance": "Open a support ticket for Prepare client presentation. Details: follow up with the vendor",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "description": "follow up with the vendor"
+    }
+  },
+  {
+    "id": "sample_0349",
+    "utterance": "Show my team calendar on 2026-09-21.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-21",
+      "calendar": "team"
+    }
+  },
+  {
+    "id": "sample_0350",
+    "utterance": "Delete task T-1001.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1001"
+    }
+  },
+  {
+    "id": "sample_0351",
+    "utterance": "Create an event called 'Fix dashboard metrics' for 2026-09-24 from 16:00 to 15:30 at Bengaluru office.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "date": "2026-09-24",
+      "start_time": "16:00",
+      "end_time": "15:30",
+      "location": "Bengaluru office"
+    }
+  },
+  {
+    "id": "sample_0352",
+    "utterance": "Look through my files for pricing strategy.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "pricing strategy"
+    }
+  },
+  {
+    "id": "sample_0353",
+    "utterance": "Message engineering team saying: I finished the analysis",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "engineering team",
+      "message": "I finished the analysis"
+    }
+  },
+  {
+    "id": "sample_0354",
+    "utterance": "Look through my files for Q4 revenue forecast.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "Q4 revenue forecast"
+    }
+  },
+  {
+    "id": "sample_0355",
+    "utterance": "Show my personal calendar on next Monday.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "next Monday",
+      "calendar": "personal"
+    }
+  },
+  {
+    "id": "sample_0356",
+    "utterance": "Search documents from last quarter for vendor contract.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "vendor contract",
+      "date_range": "last quarter"
+    }
+  },
+  {
+    "id": "sample_0357",
+    "utterance": "Create an event called 'Plan team offsite' for 2026-10-02 from 11:00 to 10:00 at Google Meet.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Plan team offsite",
+      "date": "2026-10-02",
+      "start_time": "11:00",
+      "end_time": "10:00",
+      "location": "Google Meet"
+    }
+  },
+  {
+    "id": "sample_0358",
+    "utterance": "Create an event called 'Finalize project brief' for next Monday from 16:00 to 14:00 at Zoom.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Finalize project brief",
+      "date": "next Monday",
+      "start_time": "16:00",
+      "end_time": "14:00",
+      "location": "Zoom"
+    }
+  },
+  {
+    "id": "sample_0359",
+    "utterance": "Update task T-2034 to status completed.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-2034",
+      "status": "completed"
+    }
+  },
+  {
+    "id": "sample_0360",
+    "utterance": "Create a calendar event 'Update pricing sheet' on next Monday from 11:00 to 10:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "date": "next Monday",
+      "start_time": "11:00",
+      "end_time": "10:00"
+    }
+  },
+  {
+    "id": "sample_0361",
+    "utterance": "Cancel and delete task T-3107.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-3107"
+    }
+  },
+  {
+    "id": "sample_0362",
+    "utterance": "Send Please approve this when you can to Rahul.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Rahul",
+      "message": "Please approve this when you can"
+    }
+  },
+  {
+    "id": "sample_0363",
+    "utterance": "Create an event called 'Fix dashboard metrics' for 2026-09-21 from 14:30 to 17:00 at Zoom.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "date": "2026-09-21",
+      "start_time": "14:30",
+      "end_time": "17:00",
+      "location": "Zoom"
+    }
+  },
+  {
+    "id": "sample_0364",
+    "utterance": "What meetings do I have on 2026-09-22?",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-22"
+    }
+  },
+  {
+    "id": "sample_0365",
+    "utterance": "What meetings do I have on 2026-09-21?",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-21"
+    }
+  },
+  {
+    "id": "sample_0366",
+    "utterance": "Send Let's sync tomorrow to Alex on Teams.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Alex",
+      "message": "Let's sync tomorrow",
+      "channel": "Teams"
+    }
+  },
+  {
+    "id": "sample_0367",
+    "utterance": "Update task T-1001: document the decision.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1001",
+      "description": "document the decision"
+    }
+  },
+  {
+    "id": "sample_0368",
+    "utterance": "Search documents from the past 30 days for Q4 revenue forecast.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "Q4 revenue forecast",
+      "date_range": "the past 30 days"
+    }
+  },
+  {
+    "id": "sample_0369",
+    "utterance": "Create a new task: Update pricing sheet.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Update pricing sheet"
+    }
+  },
+  {
+    "id": "sample_0370",
+    "utterance": "Search the Shared folder for pricing strategy.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "pricing strategy",
+      "folder": "Shared"
+    }
+  },
+  {
+    "id": "sample_0371",
+    "utterance": "Create a new task: Update onboarding checklist.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Update onboarding checklist"
+    }
+  },
+  {
+    "id": "sample_0372",
+    "utterance": "Arrange a meeting titled 'Review security findings' with the project team for tomorrow, starting 10:30, duration 90 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review security findings",
+      "participants": "the project team",
+      "date": "tomorrow",
+      "start_time": "10:30",
+      "duration": "90 minutes"
+    }
+  },
+  {
+    "id": "sample_0373",
+    "utterance": "Email finance team with subject 'Q4 planning' and body: Please share your feedback by Friday.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "finance team",
+      "subject": "Q4 planning",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0374",
+    "utterance": "Cancel and delete task TASK-42.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "TASK-42"
+    }
+  },
+  {
+    "id": "sample_0375",
+    "utterance": "List my events on 2026-09-22 from 10:30 to 15:30.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-22",
+      "start_time": "10:30",
+      "end_time": "15:30"
+    }
+  },
+  {
+    "id": "sample_0376",
+    "utterance": "Get rid of task T-1001.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1001"
+    }
+  },
+  {
+    "id": "sample_0377",
+    "utterance": "Write to Jordan about 'Project update': Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Jordan",
+      "subject": "Project update",
+      "body": "Thanks for your help on this."
+    }
+  },
+  {
+    "id": "sample_0378",
+    "utterance": "Raise a ticket called 'Prepare client presentation' with this issue: update the acceptance criteria",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "description": "update the acceptance criteria"
+    }
+  },
+  {
+    "id": "sample_0379",
+    "utterance": "What meetings do I have on 2026-09-24?",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-24"
+    }
+  },
+  {
+    "id": "sample_0380",
+    "utterance": "Add 'Fix dashboard metrics' to my calendar for 2026-09-24, 16:00-10:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "date": "2026-09-24",
+      "start_time": "16:00",
+      "end_time": "10:00"
+    }
+  },
+  {
+    "id": "sample_0381",
+    "utterance": "Search my documents for 'expense policy'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "expense policy"
+    }
+  },
+  {
+    "id": "sample_0382",
+    "utterance": "Remove task T-1178 from my task list.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1178"
+    }
+  },
+  {
+    "id": "sample_0383",
+    "utterance": "Search documents from the past 30 days for security audit.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "security audit",
+      "date_range": "the past 30 days"
+    }
+  },
+  {
+    "id": "sample_0384",
+    "utterance": "Look through my files for onboarding process.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "onboarding process"
+    }
+  },
+  {
+    "id": "sample_0385",
+    "utterance": "Add 'Prepare client presentation' to my calendar for 2026-09-21, 09:00-15:30.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "date": "2026-09-21",
+      "start_time": "09:00",
+      "end_time": "15:30"
+    }
+  },
+  {
+    "id": "sample_0386",
+    "utterance": "Send Please approve this when you can to HR team.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "HR team",
+      "message": "Please approve this when you can"
+    }
+  },
+  {
+    "id": "sample_0387",
+    "utterance": "Schedule 'Update pricing sheet' with Priya on 2026-09-21 at 13:00 for 45 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "participants": "Priya",
+      "date": "2026-09-21",
+      "start_time": "13:00",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0388",
+    "utterance": "Add 'Review security findings' to my calendar for 2026-09-22, 16:00-15:30.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Review security findings",
+      "date": "2026-09-22",
+      "start_time": "16:00",
+      "end_time": "15:30"
+    }
+  },
+  {
+    "id": "sample_0389",
+    "utterance": "Set task T-2034 due date to end of month.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-2034",
+      "due_date": "end of month"
+    }
+  },
+  {
+    "id": "sample_0390",
+    "utterance": "Raise a ticket called 'Fix dashboard metrics' with this issue: update the acceptance criteria",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "description": "update the acceptance criteria"
+    }
+  },
+  {
+    "id": "sample_0391",
+    "utterance": "Get calendar events for 2026-10-02 between 09:00 and 10:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-10-02",
+      "start_time": "09:00",
+      "end_time": "10:00"
+    }
+  },
+  {
+    "id": "sample_0392",
+    "utterance": "Book a 90 minutes meeting with the finance team called 'Review vendor contract' for 2026-10-02 at 11:00.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review vendor contract",
+      "participants": "the finance team",
+      "date": "2026-10-02",
+      "start_time": "11:00",
+      "duration": "90 minutes"
+    }
+  },
+  {
+    "id": "sample_0393",
+    "utterance": "DM Priya: Please approve this when you can",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Priya",
+      "message": "Please approve this when you can"
+    }
+  },
+  {
+    "id": "sample_0394",
+    "utterance": "Assign task T-2034 to Rahul.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-2034",
+      "assignee": "Rahul"
+    }
+  },
+  {
+    "id": "sample_0395",
+    "utterance": "Get rid of task T-1001.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1001"
+    }
+  },
+  {
+    "id": "sample_0396",
+    "utterance": "List my events on 2026-09-24 from 11:00 to 10:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-24",
+      "start_time": "11:00",
+      "end_time": "10:00"
+    }
+  },
+  {
+    "id": "sample_0397",
+    "utterance": "File a support ticket under technical issue: 'Update onboarding checklist'. review the latest draft",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "description": "review the latest draft",
+      "category": "technical issue"
+    }
+  },
+  {
+    "id": "sample_0398",
+    "utterance": "Search the Finance folder for expense policy.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "expense policy",
+      "folder": "Finance"
+    }
+  },
+  {
+    "id": "sample_0399",
+    "utterance": "Open a support ticket for Finalize project brief. Details: review the latest draft",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Finalize project brief",
+      "description": "review the latest draft"
+    }
+  },
+  {
+    "id": "sample_0400",
+    "utterance": "Search documents from this month for expense policy.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "expense policy",
+      "date_range": "this month"
+    }
+  },
+  {
+    "id": "sample_0401",
+    "utterance": "File a support ticket under technical issue: 'Update pricing sheet'. document the decision",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "description": "document the decision",
+      "category": "technical issue"
+    }
+  },
+  {
+    "id": "sample_0402",
+    "utterance": "Create a calendar event 'Prepare Q4 report' on 2026-09-21 from 10:30 to 11:30.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "date": "2026-09-21",
+      "start_time": "10:30",
+      "end_time": "11:30"
+    }
+  },
+  {
+    "id": "sample_0403",
+    "utterance": "Put Update onboarding checklist on my calendar on tomorrow at 14:30 until 17:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "date": "tomorrow",
+      "start_time": "14:30",
+      "end_time": "17:00"
+    }
+  },
+  {
+    "id": "sample_0404",
+    "utterance": "Create a task titled 'Fix dashboard metrics'.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Fix dashboard metrics"
+    }
+  },
+  {
+    "id": "sample_0405",
+    "utterance": "Arrange a meeting titled 'Finalize project brief' with Alex for 2026-09-21, starting 13:00, duration 30 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Finalize project brief",
+      "participants": "Alex",
+      "date": "2026-09-21",
+      "start_time": "13:00",
+      "duration": "30 minutes"
+    }
+  },
+  {
+    "id": "sample_0406",
+    "utterance": "Show my calendar events for 2026-09-22.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-22"
+    }
+  },
+  {
+    "id": "sample_0407",
+    "utterance": "Show my personal calendar on tomorrow.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "tomorrow",
+      "calendar": "personal"
+    }
+  },
+  {
+    "id": "sample_0408",
+    "utterance": "Schedule 'Update pricing sheet' with Priya on tomorrow at 11:00 for 45 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "participants": "Priya",
+      "date": "tomorrow",
+      "start_time": "11:00",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0409",
+    "utterance": "Create an event called 'Fix dashboard metrics' for 2026-09-24 from 13:00 to 14:00 at Conference Room A.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "date": "2026-09-24",
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "location": "Conference Room A"
+    }
+  },
+  {
+    "id": "sample_0410",
+    "utterance": "Add 'Update pricing sheet' to my task list.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Update pricing sheet"
+    }
+  },
+  {
+    "id": "sample_0411",
+    "utterance": "Create a medium priority support ticket: Review vendor contract — follow up with the vendor",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Review vendor contract",
+      "description": "follow up with the vendor",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "sample_0412",
+    "utterance": "Delete task TASK-42.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "TASK-42"
+    }
+  },
+  {
+    "id": "sample_0413",
+    "utterance": "Cancel and delete task T-1178.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1178"
+    }
+  },
+  {
+    "id": "sample_0414",
+    "utterance": "Create a medium priority support ticket: Update pricing sheet — follow up with the vendor",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "description": "follow up with the vendor",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "sample_0415",
+    "utterance": "Send a message to finance team: 'Please review the draft'.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "finance team",
+      "message": "Please review the draft"
+    }
+  },
+  {
+    "id": "sample_0416",
+    "utterance": "Show my calendar events for 2026-10-02.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-10-02"
+    }
+  },
+  {
+    "id": "sample_0417",
+    "utterance": "Send a message to Alex: 'Please approve this when you can'.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Alex",
+      "message": "Please approve this when you can"
+    }
+  },
+  {
+    "id": "sample_0418",
+    "utterance": "Open a support ticket for Submit expense report. Details: update the acceptance criteria",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Submit expense report",
+      "description": "update the acceptance criteria"
+    }
+  },
+  {
+    "id": "sample_0419",
+    "utterance": "Find presentation documents about Q4 revenue forecast.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "Q4 revenue forecast",
+      "file_type": "presentation"
+    }
+  },
+  {
+    "id": "sample_0420",
+    "utterance": "Delete task T-2034.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-2034"
+    }
+  },
+  {
+    "id": "sample_0421",
+    "utterance": "Search the Projects folder for Q4 revenue forecast.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "Q4 revenue forecast",
+      "folder": "Projects"
+    }
+  },
+  {
+    "id": "sample_0422",
+    "utterance": "Please delete the task with ID T-2034.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-2034"
+    }
+  },
+  {
+    "id": "sample_0423",
+    "utterance": "Delete task T-1178.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1178"
+    }
+  },
+  {
+    "id": "sample_0424",
+    "utterance": "DM Jordan: I finished the analysis",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Jordan",
+      "message": "I finished the analysis"
+    }
+  },
+  {
+    "id": "sample_0425",
+    "utterance": "Update task T-1042 to status completed.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1042",
+      "status": "completed"
+    }
+  },
+  {
+    "id": "sample_0426",
+    "utterance": "Show my calendar events for 2026-10-02.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-10-02"
+    }
+  },
+  {
+    "id": "sample_0427",
+    "utterance": "Add a calendar event 'Review security findings' on 2026-09-24, 09:00-14:00, with reminder 30 minutes before.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Review security findings",
+      "date": "2026-09-24",
+      "start_time": "09:00",
+      "end_time": "14:00",
+      "reminder": "30 minutes before"
+    }
+  },
+  {
+    "id": "sample_0428",
+    "utterance": "Send Contract review to Jordan saying Please share your feedback by Friday..",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Jordan",
+      "subject": "Contract review",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0429",
+    "utterance": "Raise a ticket called 'Submit expense report' with this issue: update the acceptance criteria",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Submit expense report",
+      "description": "update the acceptance criteria"
+    }
+  },
+  {
+    "id": "sample_0430",
+    "utterance": "Create a low priority support ticket: Update pricing sheet — update the acceptance criteria",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "description": "update the acceptance criteria",
+      "priority": "low"
+    }
+  },
+  {
+    "id": "sample_0431",
+    "utterance": "Send a message to Sam: 'Please review the draft'.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Sam",
+      "message": "Please review the draft"
+    }
+  },
+  {
+    "id": "sample_0432",
+    "utterance": "Put Submit expense report on my calendar on tomorrow at 13:00 until 14:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Submit expense report",
+      "date": "tomorrow",
+      "start_time": "13:00",
+      "end_time": "14:00"
+    }
+  },
+  {
+    "id": "sample_0433",
+    "utterance": "Delete task T-1001.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1001"
+    }
+  },
+  {
+    "id": "sample_0434",
+    "utterance": "Cancel and delete task T-3107.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-3107"
+    }
+  },
+  {
+    "id": "sample_0435",
+    "utterance": "Send an email to HR team. Subject: Project update. Message: Let's discuss this in our next meeting.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "HR team",
+      "subject": "Project update",
+      "body": "Let's discuss this in our next meeting."
+    }
+  },
+  {
+    "id": "sample_0436",
+    "utterance": "Delete task T-1042.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1042"
+    }
+  },
+  {
+    "id": "sample_0437",
+    "utterance": "Send Please approve this when you can to Alex on Teams.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Alex",
+      "message": "Please approve this when you can",
+      "channel": "Teams"
+    }
+  },
+  {
+    "id": "sample_0438",
+    "utterance": "Rename task T-1042 to 'Fix dashboard metrics'.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1042",
+      "title": "Fix dashboard metrics"
+    }
+  },
+  {
+    "id": "sample_0439",
+    "utterance": "Update task T-1001 to status completed.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1001",
+      "status": "completed"
+    }
+  },
+  {
+    "id": "sample_0440",
+    "utterance": "Get rid of task T-3107.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-3107"
+    }
+  },
+  {
+    "id": "sample_0441",
+    "utterance": "File a support ticket under billing: 'Update pricing sheet'. prepare the final summary",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "description": "prepare the final summary",
+      "category": "billing"
+    }
+  },
+  {
+    "id": "sample_0442",
+    "utterance": "Add a calendar event 'Prepare Q4 report' on tomorrow, 10:30-10:00, with reminder 15 minutes before.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "date": "tomorrow",
+      "start_time": "10:30",
+      "end_time": "10:00",
+      "reminder": "15 minutes before"
+    }
+  },
+  {
+    "id": "sample_0443",
+    "utterance": "Create a low priority support ticket: Update onboarding checklist — prepare the final summary",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update onboarding checklist",
+      "description": "prepare the final summary",
+      "priority": "low"
+    }
+  },
+  {
+    "id": "sample_0444",
+    "utterance": "Get calendar events for 2026-09-21 between 11:00 and 17:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-21",
+      "start_time": "11:00",
+      "end_time": "17:00"
+    }
+  },
+  {
+    "id": "sample_0445",
+    "utterance": "Add 'Review vendor contract' to my calendar for next Monday, 10:30-12:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Review vendor contract",
+      "date": "next Monday",
+      "start_time": "10:30",
+      "end_time": "12:00"
+    }
+  },
+  {
+    "id": "sample_0446",
+    "utterance": "Raise a ticket called 'Prepare Q4 report' with this issue: document the decision",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "description": "document the decision"
+    }
+  },
+  {
+    "id": "sample_0447",
+    "utterance": "Please delete the task with ID T-1001.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1001"
+    }
+  },
+  {
+    "id": "sample_0448",
+    "utterance": "Book a 45 minutes meeting with the project team called 'Review security findings' for 2026-10-02 at 16:00.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review security findings",
+      "participants": "the project team",
+      "date": "2026-10-02",
+      "start_time": "16:00",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0449",
+    "utterance": "Create a calendar event 'Review security findings' on 2026-10-02 from 09:00 to 15:30.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Review security findings",
+      "date": "2026-10-02",
+      "start_time": "09:00",
+      "end_time": "15:30"
+    }
+  },
+  {
+    "id": "sample_0450",
+    "utterance": "Add 'Fix dashboard metrics' to my calendar for 2026-09-22, 14:30-10:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "date": "2026-09-22",
+      "start_time": "14:30",
+      "end_time": "10:00"
+    }
+  },
+  {
+    "id": "sample_0451",
+    "utterance": "Change task T-1001's priority to low.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1001",
+      "priority": "low"
+    }
+  },
+  {
+    "id": "sample_0452",
+    "utterance": "Please add a task called 'Review vendor contract' with medium priority.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Review vendor contract",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "sample_0453",
+    "utterance": "Find documents containing customer feedback.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "customer feedback"
+    }
+  },
+  {
+    "id": "sample_0454",
+    "utterance": "Show my shared calendar on tomorrow.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "tomorrow",
+      "calendar": "shared"
+    }
+  },
+  {
+    "id": "sample_0455",
+    "utterance": "Add 'Prepare Q4 report' to my calendar for 2026-10-02, 13:00-17:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "date": "2026-10-02",
+      "start_time": "13:00",
+      "end_time": "17:00"
+    }
+  },
+  {
+    "id": "sample_0456",
+    "utterance": "Please add a task called 'Prepare Q4 report' with medium priority.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Prepare Q4 report",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "sample_0457",
+    "utterance": "Email Alex with subject 'Q4 planning' and body: Please share your feedback by Friday.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Alex",
+      "subject": "Q4 planning",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0458",
+    "utterance": "Raise a ticket called 'Plan team offsite' with this issue: prepare the final summary",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Plan team offsite",
+      "description": "prepare the final summary"
+    }
+  },
+  {
+    "id": "sample_0459",
+    "utterance": "Show my calendar events for 2026-09-24.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "2026-09-24"
+    }
+  },
+  {
+    "id": "sample_0460",
+    "utterance": "Email finance team with subject 'Meeting follow-up' and body: Please share your feedback by Friday.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "finance team",
+      "subject": "Meeting follow-up",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0461",
+    "utterance": "Write to Jordan about 'Meeting follow-up': Thanks for your help on this.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Jordan",
+      "subject": "Meeting follow-up",
+      "body": "Thanks for your help on this."
+    }
+  },
+  {
+    "id": "sample_0462",
+    "utterance": "Send Budget approval to Rahul saying Please review the attached draft..",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Rahul",
+      "subject": "Budget approval",
+      "body": "Please review the attached draft."
+    }
+  },
+  {
+    "id": "sample_0463",
+    "utterance": "Create 'Fix dashboard metrics' and assign it to Taylor.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Fix dashboard metrics",
+      "assignee": "Taylor"
+    }
+  },
+  {
+    "id": "sample_0464",
+    "utterance": "Add 'Prepare client presentation' to my calendar for 2026-09-24, 16:00-15:30.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "date": "2026-09-24",
+      "start_time": "16:00",
+      "end_time": "15:30"
+    }
+  },
+  {
+    "id": "sample_0465",
+    "utterance": "Email engineering team with subject 'Project update' and body: Please review the attached draft.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "engineering team",
+      "subject": "Project update",
+      "body": "Please review the attached draft."
+    }
+  },
+  {
+    "id": "sample_0466",
+    "utterance": "Set up a task for 'Submit expense report' due on 2026-09-20.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Submit expense report",
+      "due_date": "2026-09-20"
+    }
+  },
+  {
+    "id": "sample_0467",
+    "utterance": "Assign task T-3107 to Jordan.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-3107",
+      "assignee": "Jordan"
+    }
+  },
+  {
+    "id": "sample_0468",
+    "utterance": "Rename task T-1042 to 'Review vendor contract'.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1042",
+      "title": "Review vendor contract"
+    }
+  },
+  {
+    "id": "sample_0469",
+    "utterance": "Send The client moved the meeting to 3 PM to Priya on Slack.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Priya",
+      "message": "The client moved the meeting to 3 PM",
+      "channel": "Slack"
+    }
+  },
+  {
+    "id": "sample_0470",
+    "utterance": "Search documents from January 2026 for customer feedback.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "customer feedback",
+      "date_range": "January 2026"
+    }
+  },
+  {
+    "id": "sample_0471",
+    "utterance": "Write to Priya about 'Meeting follow-up': Please review the attached draft.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Priya",
+      "subject": "Meeting follow-up",
+      "body": "Please review the attached draft."
+    }
+  },
+  {
+    "id": "sample_0472",
+    "utterance": "Open a support ticket for Finalize project brief. Details: prepare the final summary",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Finalize project brief",
+      "description": "prepare the final summary"
+    }
+  },
+  {
+    "id": "sample_0473",
+    "utterance": "Create an event called 'Update pricing sheet' for tomorrow from 11:00 to 14:00 at Bengaluru office.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "date": "tomorrow",
+      "start_time": "11:00",
+      "end_time": "14:00",
+      "location": "Bengaluru office"
+    }
+  },
+  {
+    "id": "sample_0474",
+    "utterance": "Update task T-1178: review the latest draft.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1178",
+      "description": "review the latest draft"
+    }
+  },
+  {
+    "id": "sample_0475",
+    "utterance": "Add 'Prepare Q4 report' to my task list.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Prepare Q4 report"
+    }
+  },
+  {
+    "id": "sample_0476",
+    "utterance": "Search my documents for 'security audit'.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "security audit"
+    }
+  },
+  {
+    "id": "sample_0477",
+    "utterance": "Arrange a meeting titled 'Update pricing sheet' with the project team for next Monday, starting 14:30, duration 45 minutes.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "participants": "the project team",
+      "date": "next Monday",
+      "start_time": "14:30",
+      "duration": "45 minutes"
+    }
+  },
+  {
+    "id": "sample_0478",
+    "utterance": "DM engineering team: The client moved the meeting to 3 PM",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "engineering team",
+      "message": "The client moved the meeting to 3 PM"
+    }
+  },
+  {
+    "id": "sample_0479",
+    "utterance": "Please delete the task with ID T-1001.",
+    "action": "delete_task",
+    "parameters": {
+      "task_id": "T-1001"
+    }
+  },
+  {
+    "id": "sample_0480",
+    "utterance": "Schedule 'Review vendor contract' with Rahul and Sam on 2026-10-02 at 11:00 for 1 hour.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review vendor contract",
+      "participants": "Rahul and Sam",
+      "date": "2026-10-02",
+      "start_time": "11:00",
+      "duration": "1 hour"
+    }
+  },
+  {
+    "id": "sample_0481",
+    "utterance": "Write to Priya about 'Meeting follow-up': Please review the attached draft.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Priya",
+      "subject": "Meeting follow-up",
+      "body": "Please review the attached draft."
+    }
+  },
+  {
+    "id": "sample_0482",
+    "utterance": "Send Project update to Rahul saying Please share your feedback by Friday..",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Rahul",
+      "subject": "Project update",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0483",
+    "utterance": "Update task T-1178 to status in progress.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1178",
+      "status": "in progress"
+    }
+  },
+  {
+    "id": "sample_0484",
+    "utterance": "I need a task for Update pricing sheet.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Update pricing sheet"
+    }
+  },
+  {
+    "id": "sample_0485",
+    "utterance": "Send Meeting follow-up to Sam saying Let's discuss this in our next meeting..",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "Sam",
+      "subject": "Meeting follow-up",
+      "body": "Let's discuss this in our next meeting."
+    }
+  },
+  {
+    "id": "sample_0486",
+    "utterance": "Update task TASK-42: prepare the final summary.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "TASK-42",
+      "description": "prepare the final summary"
+    }
+  },
+  {
+    "id": "sample_0487",
+    "utterance": "Write to HR team about 'Contract review': Please share your feedback by Friday.",
+    "action": "send_email",
+    "parameters": {
+      "recipient": "HR team",
+      "subject": "Contract review",
+      "body": "Please share your feedback by Friday."
+    }
+  },
+  {
+    "id": "sample_0488",
+    "utterance": "Raise a ticket called 'Update pricing sheet' with this issue: document the decision",
+    "action": "create_support_ticket",
+    "parameters": {
+      "title": "Update pricing sheet",
+      "description": "document the decision"
+    }
+  },
+  {
+    "id": "sample_0489",
+    "utterance": "Show my work calendar on next Monday.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "next Monday",
+      "calendar": "work"
+    }
+  },
+  {
+    "id": "sample_0490",
+    "utterance": "Send a message to Sam: 'Please approve this when you can'.",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Sam",
+      "message": "Please approve this when you can"
+    }
+  },
+  {
+    "id": "sample_0491",
+    "utterance": "Set up a task for 'Plan team offsite' due on 2026-09-20.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Plan team offsite",
+      "due_date": "2026-09-20"
+    }
+  },
+  {
+    "id": "sample_0492",
+    "utterance": "Look through my files for pricing strategy.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "pricing strategy"
+    }
+  },
+  {
+    "id": "sample_0493",
+    "utterance": "Update task T-1001 to status blocked.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-1001",
+      "status": "blocked"
+    }
+  },
+  {
+    "id": "sample_0494",
+    "utterance": "Get calendar events for tomorrow between 09:00 and 10:00.",
+    "action": "get_calendar_events",
+    "parameters": {
+      "date": "tomorrow",
+      "start_time": "09:00",
+      "end_time": "10:00"
+    }
+  },
+  {
+    "id": "sample_0495",
+    "utterance": "Change task T-3107's priority to high.",
+    "action": "update_task",
+    "parameters": {
+      "task_id": "T-3107",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "sample_0496",
+    "utterance": "Look through my files for incident report.",
+    "action": "search_documents",
+    "parameters": {
+      "query": "incident report"
+    }
+  },
+  {
+    "id": "sample_0497",
+    "utterance": "Schedule 'Review vendor contract' with Alex and Priya on 2026-09-22 at 14:30 for 1 hour.",
+    "action": "schedule_meeting",
+    "parameters": {
+      "title": "Review vendor contract",
+      "participants": "Alex and Priya",
+      "date": "2026-09-22",
+      "start_time": "14:30",
+      "duration": "1 hour"
+    }
+  },
+  {
+    "id": "sample_0498",
+    "utterance": "Please add a task called 'Prepare client presentation' with high priority.",
+    "action": "create_task",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "sample_0499",
+    "utterance": "Message Jordan saying: I finished the analysis",
+    "action": "send_message",
+    "parameters": {
+      "recipient": "Jordan",
+      "message": "I finished the analysis"
+    }
+  },
+  {
+    "id": "sample_0500",
+    "utterance": "Add 'Prepare client presentation' to my calendar for 2026-09-22, 09:00-12:00.",
+    "action": "create_calendar_event",
+    "parameters": {
+      "title": "Prepare client presentation",
+      "date": "2026-09-22",
+      "start_time": "09:00",
+      "end_time": "12:00"
+    }
+  }
+]
